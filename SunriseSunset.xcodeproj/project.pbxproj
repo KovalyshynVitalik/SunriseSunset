@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		F0B901EF235DC874001EF5A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B901EE235DC874001EF5A5 /* AppDelegate.swift */; };
 		F0B901F1235DC874001EF5A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B901F0235DC874001EF5A5 /* SceneDelegate.swift */; };
-		F0B901F3235DC874001EF5A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B901F2235DC874001EF5A5 /* ViewController.swift */; };
 		F0B901F6235DC874001EF5A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B901F4235DC874001EF5A5 /* Main.storyboard */; };
 		F0B901F8235DC876001EF5A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B901F7235DC876001EF5A5 /* Assets.xcassets */; };
 		F0B901FB235DC876001EF5A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B901F9235DC876001EF5A5 /* LaunchScreen.storyboard */; };
+		F0B90204235DCA2C001EF5A5 /* SunriseSunsetInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B90203235DCA2C001EF5A5 /* SunriseSunsetInfoTableViewCell.swift */; };
+		F0B90209235DCAC5001EF5A5 /* GetSunriseSunsetInfoWithCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B90208235DCAC5001EF5A5 /* GetSunriseSunsetInfoWithCoordinates.swift */; };
+		F0B9020B235DCAE5001EF5A5 /* AbstractRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9020A235DCAE5001EF5A5 /* AbstractRequest.swift */; };
+		F0B9020D235DCAFE001EF5A5 /* RequestsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9020C235DCAFE001EF5A5 /* RequestsManager.swift */; };
+		F0B90210235DCC4E001EF5A5 /* SunriseSunsetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B9020F235DCC4E001EF5A5 /* SunriseSunsetModel.swift */; };
+		F0B90213235DCC81001EF5A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B90212235DCC81001EF5A5 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F0B901EB235DC874001EF5A5 /* SunriseSunset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunriseSunset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B901EE235DC874001EF5A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0B901F0235DC874001EF5A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0B901F2235DC874001EF5A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0B901F5235DC874001EF5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0B901F7235DC876001EF5A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B901FA235DC876001EF5A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0B901FC235DC876001EF5A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B90203235DCA2C001EF5A5 /* SunriseSunsetInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunsetInfoTableViewCell.swift; sourceTree = "<group>"; };
+		F0B90208235DCAC5001EF5A5 /* GetSunriseSunsetInfoWithCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSunriseSunsetInfoWithCoordinates.swift; sourceTree = "<group>"; };
+		F0B9020A235DCAE5001EF5A5 /* AbstractRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRequest.swift; sourceTree = "<group>"; };
+		F0B9020C235DCAFE001EF5A5 /* RequestsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsManager.swift; sourceTree = "<group>"; };
+		F0B9020F235DCC4E001EF5A5 /* SunriseSunsetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunsetModel.swift; sourceTree = "<group>"; };
+		F0B90212235DCC81001EF5A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		F0B901ED235DC874001EF5A5 /* SunriseSunset */ = {
 			isa = PBXGroup;
 			children = (
+				F0B90202235DC9F1001EF5A5 /* Custom Views */,
+				F0B90206235DCA6D001EF5A5 /* Helpers */,
+				F0B9020E235DCC1A001EF5A5 /* Models */,
+				F0B90211235DCC64001EF5A5 /* ViewControllers */,
 				F0B901EE235DC874001EF5A5 /* AppDelegate.swift */,
 				F0B901F0235DC874001EF5A5 /* SceneDelegate.swift */,
-				F0B901F2235DC874001EF5A5 /* ViewController.swift */,
 				F0B901F4235DC874001EF5A5 /* Main.storyboard */,
 				F0B901F7235DC876001EF5A5 /* Assets.xcassets */,
 				F0B901F9235DC876001EF5A5 /* LaunchScreen.storyboard */,
 				F0B901FC235DC876001EF5A5 /* Info.plist */,
 			);
 			path = SunriseSunset;
+			sourceTree = "<group>";
+		};
+		F0B90202235DC9F1001EF5A5 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0B90203235DCA2C001EF5A5 /* SunriseSunsetInfoTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		F0B90206235DCA6D001EF5A5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F0B90207235DCAA8001EF5A5 /* RequestsAndResponses */,
+				F0B9020A235DCAE5001EF5A5 /* AbstractRequest.swift */,
+				F0B9020C235DCAFE001EF5A5 /* RequestsManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F0B90207235DCAA8001EF5A5 /* RequestsAndResponses */ = {
+			isa = PBXGroup;
+			children = (
+				F0B90208235DCAC5001EF5A5 /* GetSunriseSunsetInfoWithCoordinates.swift */,
+			);
+			path = RequestsAndResponses;
+			sourceTree = "<group>";
+		};
+		F0B9020E235DCC1A001EF5A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0B9020F235DCC4E001EF5A5 /* SunriseSunsetModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F0B90211235DCC64001EF5A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0B90212235DCC81001EF5A5 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0B901F3235DC874001EF5A5 /* ViewController.swift in Sources */,
+				F0B9020B235DCAE5001EF5A5 /* AbstractRequest.swift in Sources */,
+				F0B90204235DCA2C001EF5A5 /* SunriseSunsetInfoTableViewCell.swift in Sources */,
+				F0B90213235DCC81001EF5A5 /* ViewController.swift in Sources */,
+				F0B90209235DCAC5001EF5A5 /* GetSunriseSunsetInfoWithCoordinates.swift in Sources */,
+				F0B9020D235DCAFE001EF5A5 /* RequestsManager.swift in Sources */,
 				F0B901EF235DC874001EF5A5 /* AppDelegate.swift in Sources */,
 				F0B901F1235DC874001EF5A5 /* SceneDelegate.swift in Sources */,
+				F0B90210235DCC4E001EF5A5 /* SunriseSunsetModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
