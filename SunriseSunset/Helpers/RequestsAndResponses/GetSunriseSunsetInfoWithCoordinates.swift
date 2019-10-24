@@ -24,6 +24,10 @@ class GetSunriseSunsetInfoWithCoordinates: AbstractRequest {
             queryParameters["lat"] = "\(latitude)"
         }
         
+//        queryParameters["formatted"] = "0"
+        
+//        https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&formatted=0
+        
         return queryParameters
     }
 }

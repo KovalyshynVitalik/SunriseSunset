@@ -9,10 +9,15 @@
 import Foundation
 
 struct SunriseSunsetModel: Decodable {
-    let results: Results?
+    var results: Results?
 }
 
 struct Results: Decodable {
     let sunrise: String?
     let sunset: String?
+    var cityName: String?
+    let solar_noon: String?
+    let day_length: String?
+    let civil_twilight_begin: String?
+    let civil_twilight_end: String?
 }

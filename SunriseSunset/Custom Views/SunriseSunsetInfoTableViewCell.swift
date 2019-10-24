@@ -12,6 +12,7 @@ class SunriseSunsetInfoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var sunriseLabel: UILabel!
     @IBOutlet weak var sunsetLabel: UILabel!
+    @IBOutlet var cityNameLabel: UILabel!
     
 
     override func awakeFromNib() {
@@ -23,6 +24,13 @@ class SunriseSunsetInfoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.sunriseLabel.text = nil
+        self.sunsetLabel.text = nil
+        self.cityNameLabel.text = nil
     }
 
 }
