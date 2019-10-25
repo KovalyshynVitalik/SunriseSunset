@@ -30,7 +30,7 @@ class AbstractRequest {
         get {
             
             // needed if api exists on web service
-//            var urlParams = urlParameters ?? [String: String]()
+
             let parametersString = urlParameters?.map{ (parameter) -> String in
                 let urlParam = "\(parameter.key)=\(parameter.value)"
                 guard let urlParametersEncoded = urlParam.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return urlParam }

@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSPlacesClient.provideAPIKey("AIzaSyAGhHMd0jlCruRxKyj6dCU2ZxB0fKOZid4")
         GMSServices.provideAPIKey("AIzaSyAGhHMd0jlCruRxKyj6dCU2ZxB0fKOZid4")
-        //AIzaSyDhGlZaeujbw26MnoLfTWJXBg0He-9dQks
-        //AIzaSyAGhHMd0jlCruRxKyj6dCU2ZxB0fKOZid4
+       
        return true
     }
 

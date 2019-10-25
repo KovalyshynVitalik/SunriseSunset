@@ -63,7 +63,6 @@ class ViewController: UIViewController {
         autocompleteController.placeFields = fields
         
         
-        
         // Specify a filter.
         let filter = GMSAutocompleteFilter()
         filter.type = .noFilter
@@ -72,6 +71,7 @@ class ViewController: UIViewController {
         // Display the autocomplete view controller.
         present(autocompleteController, animated: true, completion: nil)
     }
+    
     
     func getSunriseSunsetInfoWithCoordinates(_ latitude: Double,_ longitude: Double,cityName: String? = nil) {
         RequestsManager.shared.getSunriseSunsetInfo(longitude: longitude , latitude: latitude) { (sunriseSunsetDataModel) in
@@ -106,13 +106,8 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
         let sunriseTimeStamp = self.sunriseDataModels[indexPath.row].results?.sunrise ?? ""
         let sunsetTimeStamp = self.sunriseDataModels[indexPath.row].results?.sunset ?? ""
         
-//        cell.sunriseLabel.text! += SunriseSunsetDateFormatter.shared.getTimeStamp(with: sunriseTimeStamp)
-//        cell.sunsetLabel.text! += SunriseSunsetDateFormatter.shared.getTimeStamp(with: sunsetTimeStamp)
-        
         cell.sunriseLabel.text = "Sunrise at " + sunriseTimeStamp
         cell.sunsetLabel.text = "sunset at " + sunsetTimeStamp
-        
-        
         cell.cityNameLabel.text = self.sunriseDataModels[indexPath.row].results?.cityName ?? ""
         
         return cell
@@ -123,10 +118,6 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        let vc = DetailViewController()
-//        vc.sunriseSunsetDataModel = self.sunriseDataModels[indexPath.row].results
-//        self.navigationController?.pushViewController(vc, animated: true)
-
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(identifier: "detail") as! DetailViewController
         controller.sunriseSunsetDataModel = self.sunriseDataModels[indexPath.row].results
